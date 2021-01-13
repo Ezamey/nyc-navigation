@@ -1,5 +1,5 @@
 import os
-import osmnx as ox
+#import osmnx as ox
 from datetime import datetime
 
 basedir = os.path.abspath(os.path.dirname(__file__))
@@ -10,6 +10,8 @@ class Config(object):
 
     LOG_TO_STDOUT = os.environ.get('LOG_TO_STDOUT')
 
+    
+    """
     bike_dangerous = os.path.join(basedir,"CSV/bike_dangerous.graphml")
     bike_safest = os.path.join(basedir,"CSV/bike_safest.graphml")
     bike_safest_ratio = os.path.join(basedir,"CSV/bike_safest_ratio.graphml")
@@ -19,8 +21,6 @@ class Config(object):
     walk_dangerous = os.path.join(basedir,"CSV/walk_dangerous.graphml")
     walk_safest = os.path.join(basedir,"CSV/walk_safest.graphml")
     walk_safest_ratio = os.path.join(basedir,"CSV/walk_safest_ratio.graphml")
-
-    """
     print("Building Networks")
     print (datetime.now() - startTime)
     G_drive_safest = ox.io.load_graphml(filepath=drive_safest)   
