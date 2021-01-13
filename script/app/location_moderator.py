@@ -164,17 +164,17 @@ def choose_right_network(choice_weight: str, choice_user: str) -> classmethod:
     if choice_weight == "safe" or choice_weight == "fast":
         
         if choice_user == "drive": 
-            G = ox.io.load_graphml("script\\app\\CSV\\drive_safest.graphml")
+            G = ox.io.load_graphml("script/app/CSV/drive_safest.graphml")
             #G = ox.io.load_graphml(Config.drive_safest)
             #G = Config.G_drive_safest   
     
         if choice_user == "walk": 
-            G = ox.io.load_graphml("script\\app\\CSV\\walk_safest.graphml")
+            G = ox.io.load_graphml("script/app/CSV/walk_safest.graphml")
             #G = ox.io.load_graphml(Config.walk_safest)   
             #G = Config.G_walk_safest
         
         if choice_user == "bike": 
-            G = ox.io.load_graphml("script\\app\\CSV\\bike_safest.graphml")
+            G = ox.io.load_graphml("script/app/CSV/bike_safest.graphml")
             #G = ox.io.load_graphml(Config.bike_safest)   
             #G = Config.G_bike_safest
 
@@ -182,34 +182,34 @@ def choose_right_network(choice_weight: str, choice_user: str) -> classmethod:
     elif choice_weight == "do you want to die?":
     
         if choice_user == "drive": 
-            G = ox.io.load_graphml("script\\app\\CSV\\bike_dangerous.graphml")
+            G = ox.io.load_graphml("script/app/CSV/drive_dangerous.graphml")
             #G = ox.io.load_graphml(Config.drive_dangerous)   
             #G = Config.G_drive_dangerous
     
         if choice_user == "walk": 
-            G = ox.io.load_graphml("script\\app\\CSV\\bike_dangerous.graphml")
+            G = ox.io.load_graphml("script/app/CSV/walk_dangerous.graphml")
             #G = ox.io.load_graphml(Config.walk_dangerous)   
             #G = Config.G_walk_dangerous
 
         if choice_user == "bike": 
-            G = ox.io.load_graphml("script\\app\\CSV\\/bike_dangerous.graphml")
+            G = ox.io.load_graphml("script/app/CSV/bike_dangerous.graphml")
             #G = ox.io.load_graphml(Config.bike_dangerous)   
             #G = Config.G_bike_dangerous
 
     elif choice_weight == "ratio safe-fast":
     
         if choice_user == "drive": 
-            G = ox.io.load_graphml("script\\app\\CSV\\drive_safest_ratio.graphml")
+            G = ox.io.load_graphml("script/app/CSV/drive_safest_ratio.graphml")
             #G = ox.io.load_graphml(Config.drive_safest_ratio) 
             #G = Config.G_drive_safest_ratio  
     
         if choice_user == "walk": 
-            G = ox.io.load_graphml("script\\app\\CSV\\walk_safest_ratio.graphml")
+            G = ox.io.load_graphml("script/app/CSV/walk_safest_ratio.graphml")
             #G = ox.io.load_graphml(Config.walk_safest_ratio)   
             #G = Config.G_walk_safest_ratio
         
         if choice_user == "bike": 
-            G = ox.io.load_graphml("script\\app\\CSV\\bike_safest_ratio.graphml")
+            G = ox.io.load_graphml("script/app/CSV/bike_safest_ratio.graphml")
             #G = ox.io.load_graphml(Config.bike_safest_ratio)  
             #G = Config.G_bike_safest_ratio
         
