@@ -20,6 +20,7 @@ class Config(object):
     walk_safest = os.path.join(basedir,"CSV/walk_safest.graphml")
     walk_safest_ratio = os.path.join(basedir,"CSV/walk_safest_ratio.graphml")
 
+    """
     print("Building Networks")
     print (datetime.now() - startTime)
     G_drive_safest = ox.io.load_graphml(filepath=drive_safest)   
@@ -33,6 +34,7 @@ class Config(object):
     G_bike_safest_ratio = ox.io.load_graphml(filepath=bike_safest_ratio)   
     print(datetime.now() - startTime)
     print("Networks Built")
+    """
 
 
 if __name__ == "__main__":
