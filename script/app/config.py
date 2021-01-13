@@ -8,6 +8,8 @@ startTime = datetime.now()
 class Config(object):
     SECRET_KEY = os.environ.get("SECRET_KEY") or "NY-NAV-BABY"
 
+    LOG_TO_STDOUT = os.environ.get('LOG_TO_STDOUT')
+
     bike_dangerous = os.path.join(basedir,"CSV/bike_dangerous.graphml")
     bike_safest = os.path.join(basedir,"CSV/bike_safest.graphml")
     bike_safest_ratio = os.path.join(basedir,"CSV/bike_safest_ratio.graphml")
